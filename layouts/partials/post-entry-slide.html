@@ -1,4 +1,4 @@
-<div class="post-line" style="align-items: normal; padding-bottom: 20px;">
+<div class="post-line">
 
     {{ $dateFormat := "2 Jan 2006"}}
     {{ with .Site.Params.listDateFormat }}
@@ -9,18 +9,16 @@
     <p class="line-date">{{ .Date | time.Format $dateFormat }} </p>
   </div>
 
-  <div style="width: 170px; height: 96px;">
-    {{ with .Resources.GetMatch .Params.featuredImage }}
-    <img style="width: 170px; height: 96px;" class="slide-featured-image" src="{{ .RelPermalink }}">
-    {{ end }}
-  </div>
+  {{ with .Resources.GetMatch .Params.featuredImage }}
+  <img class="thumbnail" class="slide-featured-image" src="{{ .RelPermalink }}">
+  {{ end }}
   <a class="slide-decoration-wrapper" href="{{ .Params.directLink }}">
   <div class="slide-decoration">
     »
   </div>
   </a>
-  <a style="text-decoration: none;" href="{{ .RelPermalink }}">
-      <span class="line-title" style="text-decoration: underline;">{{ .Title }}</span>
+  <a class="slide-description" href="{{ .RelPermalink }}">
+      <span class="line-title">{{ .Title }}</span>
         {{ if .Site.Params.listSummaries }}
         <p class="line-summary-slides"> {{ .Summary }} </p>
         {{ end }}
