@@ -16,9 +16,46 @@ hidePagination = true
 fediverse = "@ole@fosstodon.org"
 +++
 
-[Markdown showcase](https://gist.github.com/allysonsilva/85fff14a22bbdf55485be947566cc09e#file-full-markdown-md) by [Alyson Silva](https://gist.github.com/allysonsilva):
+## Notice Boxes
 
-# Headers
+From [github.com/martignoni/hugo-notice](https://github.com/martignoni/hugo-notice)
+```
+{{</* notice warning */>}}
+This is a warning box
+{{</* /notice */>}}
+
+{{</* notice tip */>}}
+This is a tip box
+{{</* /notice */>}}
+
+{{</* notice note */>}}
+This is a note box
+{{</* /notice */>}}
+
+{{</* notice info */>}}
+This is an info box
+{{</* /notice */>}}
+```
+
+{{< notice warning >}}
+This is a warning box
+{{< /notice >}}
+
+{{< notice tip >}}
+This is a tip box
+{{< /notice >}}
+
+{{< notice note >}}
+This is a note box
+{{< /notice >}}
+
+{{< notice info >}}
+This is an info box
+{{< /notice >}}
+
+Adapted from [Markdown showcase](https://gist.github.com/allysonsilva/85fff14a22bbdf55485be947566cc09e#file-full-markdown-md) by [Alyson Silva](https://gist.github.com/allysonsilva):
+
+## Headers
 
 ```
 # h1 Heading 8-)
@@ -54,7 +91,7 @@ Alt-H2
 
 ------
 
-# Emphasis
+## Emphasis
 
 ```
 Emphasis, aka italics, with *asterisks* or _underscores_.
@@ -136,21 +173,25 @@ _This is italic text_
 ```
 
 1. First ordered list item
+   a. dtrn
 2. Another item
-⋅⋅* Unordered sub-list.
+   * Unordered sub-list.
 1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+   1. Ordered sub-list
+4. And another item.  
+   You can have properly indented paragraphs within list items. Notice the leading spaces (at least one, but we'll use three here to also align the raw Markdown).  
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
+
+- list
+- list
+  1. list
+  1. list
 
 1. Make my changes
     1. Fix bug
@@ -167,6 +208,8 @@ _This is italic text_
   - Marker character change forces new list start:
     * Ac tristique libero volutpat at
     + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+    - Nulla volutpat aliquam velit
     - Nulla volutpat aliquam velit
 + Very easy!
 
