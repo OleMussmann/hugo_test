@@ -1,0 +1,18 @@
+# Hugo
+/public/
+/resources/_gen/
+
+# lock
+*.lock
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Nix
+.direnv/
