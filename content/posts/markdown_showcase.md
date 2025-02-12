@@ -133,49 +133,13 @@ _This is italic text_
 
 ------
 
-# Lists
+## Lists
 
 ```
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
-
-1. Make my changes
-    1. Fix bug
-    2. Improve formatting
-        - Make the headings bigger
-2. Push my commits to GitHub
-3. Open a pull request
-    * Describe my changes
-    * Mention all the members of my team
-        * Ask for feedback
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-```
-
 1. First ordered list item
    a. dtrn
 2. Another item
-   * Unordered sub-list.
+   * Unordered sub-list
 1. Actual numbers don't matter, just that it's a number
    1. Ordered sub-list
 4. And another item.  
@@ -188,20 +152,32 @@ _This is italic text_
 - Or minuses
 + Or pluses
 
-- list
-- list
-  1. list
-  1. list
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+    - Nulla volutpat aliquam velit
+    - Nulla volutpat aliquam velit
++ Very easy!
+```
 
-1. Make my changes
-    1. Fix bug
-    2. Improve formatting
-        - Make the headings bigger
-2. Push my commits to GitHub
-3. Open a pull request
-    * Describe my changes
-    * Mention all the members of my team
-        * Ask for feedback
+1. First ordered list item
+   a. dtrn
+2. Another item
+   * Unordered sub-list
+1. Actual numbers don't matter, just that it's a number
+   1. Ordered sub-list
+4. And another item.  
+   You can have properly indented paragraphs within list items. Notice the leading spaces (at least one, but we'll use three here to also align the raw Markdown).  
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
 
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
@@ -215,7 +191,7 @@ _This is italic text_
 
 ------
 
-# Task lists
+## Task lists
 
 ```
 - [x] Finish my changes
@@ -237,7 +213,7 @@ _This is italic text_
 
 ------
 
-# Ignoring Markdown formatting
+## Ignoring Markdown formatting
 
 You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.
 
@@ -249,7 +225,7 @@ Let's rename \*our-new-project\* to \*our-old-project\*.
 
 ------
 
-# Links
+## Links
 
 ```
 [I'm an inline-style link](https://www.google.com)
@@ -299,7 +275,7 @@ Some text to show that the reference links can follow later.
 
 ------
 
-# Images
+## Images
 
 ```
 Here's our logo (hover to see the title text):
@@ -347,14 +323,12 @@ With a reference later in the document defining the URL location:
 
 ------
 
-# [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+## [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
 ```
 Footnote 1 link[^first].
 
 Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
 
 Duplicated footnote reference[^second].
 
@@ -368,8 +342,6 @@ Duplicated footnote reference[^second].
 Footnote 1 link[^first].
 
 Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
 
 Duplicated footnote reference[^second].
 
@@ -381,7 +353,7 @@ Duplicated footnote reference[^second].
 
 ------
 
-# Code and Syntax Highlighting
+## Code and Syntax Highlighting
 
 ```
 Inline `code` has `back-ticks around` it.
@@ -501,7 +473,7 @@ datahere
 
 ------
 
-# Tables
+## Tables
 
 ```
 Colons can be used to align columns.
@@ -591,7 +563,7 @@ Markdown | Less | Pretty
 
 ------
 
-# Blockquotes
+## Blockquotes
 
 ```
 > Blockquotes are very handy in email to emulate reply text.
@@ -619,29 +591,7 @@ Quote break.
 
 ------
 
-# Inline HTML
-
-```
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-```
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-------
-
-# Horizontal Rules
+## Horizontal Rules
 
 ```
 Three or more...
@@ -675,21 +625,82 @@ Underscores
 
 ------
 
-# YouTube Videos
+## Diagrams
 
+For more, see: https://mermaid.js.org/syntax/flowchart.html
+
+````
+```mermaid
+---
+title: Merge Commit
+---
+gitGraph
+commit id: "first commit"
+commit id: "second commit"
+branch feature
+commit id: "develop feature"
+commit id: "write tests"
+checkout main
+merge feature id: "merge commit"
+commit id: "bugfix"
+commit id: "update docs"
 ```
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank">
-<img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10">
-</a>
+````
+
+```mermaid
+---
+title: Merge Commit
+---
+gitGraph
+commit id: "first commit"
+commit id: "second commit"
+branch feature
+commit id: "develop feature"
+commit id: "write tests"
+checkout main
+merge feature id: "merge commit"
+commit id: "bugfix"
+commit id: "update docs"
 ```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank">
-<img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10">
-</a>
-
+````
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
 ```
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+````
+
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
 ```
 
-[![IMAGE ALT TEXT HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/YouTube_logo_2015.svg/1200px-YouTube_logo_2015.svg.png)](https://www.youtube.com/watch?v=ciawICBvQoE)
+````
+```mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
+````
 
+```mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
