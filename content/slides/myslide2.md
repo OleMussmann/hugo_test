@@ -1,17 +1,21 @@
 +++
-date = '{{ .Date }}'
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+date = '2025-02-08T14:53:22+01:00'
+title = 'Myslide2'
 summary = "Post Summary"
 description = "Post Description"
-tags = ["database", "java"]
+featuredImage = "image.png"
+directLink = "https://example.com"
+tags = ["slides"]
 draft = true
 
 toc = false
 autonumber = false
-readTime = true
+readTime = false
 math = true
-showTags = false
+showTags = true
 hideBackToTop = false
 hidePagination = true
 fediverse = "@ole@fosstodon.org"
 +++
+
+myslide

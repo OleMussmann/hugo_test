@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "Colophon"
 description = "About this blog, tech stack and content license"
 fediverse = "@ole@fosstodon.org"
 +++
@@ -15,6 +15,6 @@ A blog. No bells. No whistles. No login, no paywall. No ads, banners, pop-ups or
 This blog is [open source](https://github.com/OleMussmann/ole.mn). It is built with [Hugo](https://gohugo.io/), a static site generator written in [Go](https://go.dev/); the theme is a modified [typo](https://github.com/tomfran/typo), originally made by [Francesco Tomaselli](https://tomfran.github.io/). Posts are written in [markdown](https://www.markdownguide.org/getting-started/). Deployment on [GitHub Pages](https://pages.github.com/), it's free and easy for static sites. Fonts are: [Habibi](https://fonts.google.com/specimen/Habibi) by [Magnus Gaarde](http://skriftklog.dk/) for headings, [Eduardo Rodríguez Tunni](https://www.tipo.net.ar/)'s [Average](https://fontforge.io/best-pairings/average/) for running text, and [Victor Mono](https://rubjo.github.io/victor-mono/) from [Rune Bjørnerås](https://github.com/rubjo) for `code`. Presentations are made with [reveal.js](https://revealjs.com/) framework, cooked up by [Hakim El Hattab](https://hakim.se).
 
 #### License
-Content on this blog is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). This means: do whatever you want with it, but give credit where credit's due, show where you made changes and use the same license for your derived work.
+Content on this blog is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). This means: do whatever you want with it, but give credit where credit's due, show where you made changes, and use the same license for your derived work.
 
 [![](images/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
