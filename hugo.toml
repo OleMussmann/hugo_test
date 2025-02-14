@@ -97,6 +97,8 @@ description = "A Tech Blog"
 # Appearance settings
 theme = 'auto'
 colorPalette = "iceberg"
+mermaidTheme = "forest"
+mermaidDarkTheme = "dark"
 hideHeader = false
 # Footer
 showFooter = false
