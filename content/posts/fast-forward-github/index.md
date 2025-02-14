@@ -5,7 +5,6 @@ summary = "The year is 2025 CE and GitHub.com still can’t do “fast-forward�
 description = "Automated fast-forward merges on GitHub.com"
 tags = ["GitHub", "git"]
 draft = false
-enableEmoji = true
 
 toc = false
 autonumber = false
