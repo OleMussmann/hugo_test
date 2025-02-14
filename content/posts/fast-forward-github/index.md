@@ -1,7 +1,7 @@
 +++
-date = '2025-01-26T08:58:59+01:00'
+date = '2025-02-13T12:00:00+01:00'
 title = 'Fast-Forward Merges on GitHub'
-summary = "Wrestling Octocat for Basic Functionality"
+summary = "The year is 2025 CE and GitHub.com still can’t do “fast-forward” merges via its web-interface. But _you_ can. I’ll show you how."
 description = "Automated fast-forward merges on GitHub.com"
 tags = ["GitHub", "git"]
 draft = false
@@ -16,6 +16,8 @@ hideBackToTop = false
 hidePagination = true
 fediverse = "@ole@fosstodon.org"
 +++
+
+![A map of Underground lines in Stockholm](header.jpg "If your `git` graph looks like this, you have seriously screwed up")
 
 > "I've got no time for prose, give me a solution!" [Sure, click here to get to the juicy bits.](#solutions) For the readers with patience, the story starts below.
 

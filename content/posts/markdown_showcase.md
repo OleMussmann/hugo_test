@@ -1,9 +1,9 @@
 +++
 date = '2025-02-02T18:38:56+01:00'
 title = 'Markdown Showcase'
-summary = "What markdown options work in this theme? long long text long long text long long text"
-description = "Testing theme by listing many markdown options"
-tags = ["database", "java"]
+summary = "What markdown features work in this theme?"
+description = "Testing theme features by listing many markdown options"
+tags = ["markdown", "hugo", "blog"]
 draft = false
 
 toc = false
@@ -15,6 +15,18 @@ hideBackToTop = false
 hidePagination = true
 fediverse = "@ole@fosstodon.org"
 +++
+
+## Themes
+
+The base theme in this blog is [typo](https://github.com/tomfran/typo),
+extended with [typo-plus](https://github.com/OleMussmann/typo-plus) and
+[hugo-notice](https://github.com/martignoni/hugo-notice). What markdown- (and
+extended) features does this combination offer? What's the markdown code to
+produce certain features?
+
+This is mainly a reference for my future self. Feel free to browse and maybe
+learn a thing or two. Keep in mind: not everything listed here will work for
+your theme, and there might be features that yours have that are not covered here.
 
 ## Notice Boxes
 
@@ -53,7 +65,91 @@ This is a note box
 This is an info box
 {{< /notice >}}
 
-Adapted from [Markdown showcase](https://gist.github.com/allysonsilva/85fff14a22bbdf55485be947566cc09e#file-full-markdown-md) by [Alyson Silva](https://gist.github.com/allysonsilva):
+------
+
+## Diagrams
+
+For more, see: https://mermaid.js.org/syntax/flowchart.html
+
+````
+```mermaid
+---
+title: Merge Commit
+---
+gitGraph
+commit id: "first commit"
+commit id: "second commit"
+branch feature
+commit id: "develop feature"
+commit id: "write tests"
+checkout main
+merge feature id: "merge commit"
+commit id: "bugfix"
+commit id: "update docs"
+```
+````
+
+```mermaid
+---
+title: Merge Commit
+---
+gitGraph
+commit id: "first commit"
+commit id: "second commit"
+branch feature
+commit id: "develop feature"
+commit id: "write tests"
+checkout main
+merge feature id: "merge commit"
+commit id: "bugfix"
+commit id: "update docs"
+```
+
+````
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+```
+````
+
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+```
+
+````
+```mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
+````
+
+```mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
+
+------
+
+Everything below is adapted from [Markdown showcase](https://gist.github.com/allysonsilva/85fff14a22bbdf55485be947566cc09e#file-full-markdown-md) by [Alyson Silva](https://gist.github.com/allysonsilva):
 
 ## Headers
 
@@ -622,85 +718,3 @@ Asterisks
 ___
 
 Underscores
-
-------
-
-## Diagrams
-
-For more, see: https://mermaid.js.org/syntax/flowchart.html
-
-````
-```mermaid
----
-title: Merge Commit
----
-gitGraph
-commit id: "first commit"
-commit id: "second commit"
-branch feature
-commit id: "develop feature"
-commit id: "write tests"
-checkout main
-merge feature id: "merge commit"
-commit id: "bugfix"
-commit id: "update docs"
-```
-````
-
-```mermaid
----
-title: Merge Commit
----
-gitGraph
-commit id: "first commit"
-commit id: "second commit"
-branch feature
-commit id: "develop feature"
-commit id: "write tests"
-checkout main
-merge feature id: "merge commit"
-commit id: "bugfix"
-commit id: "update docs"
-```
-
-````
-```mermaid
-gantt
-    title A Gantt Diagram
-    dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
-        another task    :24d
-```
-````
-
-```mermaid
-gantt
-    title A Gantt Diagram
-    dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
-        another task    :24d
-```
-
-````
-```mermaid
-pie title Pets adopted by volunteers
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 15
-```
-````
-
-```mermaid
-pie title Pets adopted by volunteers
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 15
-```
