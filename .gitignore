@@ -1,9 +1,7 @@
 # Hugo
 /public/
 /resources/_gen/
-
-# lock
-*.lock
+.hugo_build.lock
 
 # Logs
 logs
