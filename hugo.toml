@@ -93,7 +93,7 @@ noclasses = false
 
 [params]
 # Meta description
-description = "A Tech Blog"
+description = "A tech blog - adventures in coding, cybersecurity and design"
 # Appearance settings
 theme = 'auto'
 colorPalette = "iceberg"
@@ -108,7 +108,7 @@ homeIntroTitle = 'Hi!'
 homeIntroContent = """
 I am Ole: codeslinger, physicist and technology geek with an eye for design and patterns. Research Software Engineer at the [Netherlands eScience Center](https://www.esciencecenter.nl/), usually hunting for some problem to solve. Currently enjoying [NixOS](https://nixos.org/), [Python](https://www.python.org/), [Rust](https://www.rust-lang.org/) and cybersecurity.
 
-### Highlighted Projects
+## Highlighted Projects
 * [`nps`](https://github.com/OleMussmann/nps) - The better [`nix`](https://nixos.org/) package search
 """
 # Collection to display on home
