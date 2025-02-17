@@ -16,13 +16,13 @@ hidePagination = true
 fediverse = "@ole@fosstodon.org"
 +++
 
-![Street art, a graffiti of Sherlock with a magnifying glass](header.jpg "A suspicious message in GitHub is the beginning of this detective story")
+![Street art, a graffiti of Sherlock with a magnifying glass](header.jpg#eager "A suspicious message in GitHub is the beginning of this detective story")
 
 Yesterday, my colleague [Faruk](https://github.com/fdiblen) asked me to conduct a Hallway Test for the [`NLeSC/python-template`](https://github.com/NLeSC/python-template) he is working on: he just grabbed me off the hallway and asked me to give it a spin. This is, however, not a story about the test, but of open-source intelligence (OSINT) and the contributions of yet another "helpful noob".
 
 Right after I posted my feedback in an [issue](https://github.com/NLeSC/python-template/issues/554) of the project, someone else posted a helpful contribution right underneath:
 
-![GitHub user "xiaobai-marker" posting a download link to malware](comment.png "GitHub comment from xiaobai-marker, with edited link so y'all don't get any funny ideas")
+![GitHub user "xiaobai-marker" posting a download link to malware](comment.png#eager "GitHub comment from xiaobai-marker, with edited link so y'all don't get any funny ideas")
 
 Huh? It took this person only a few seconds to post a fix for quite a list of small changes that I posted. That's so nice! So let's do a review of _their_ contributions.
 
@@ -32,7 +32,7 @@ Their GitHub handle is `xiaobai-marker`. XiaoBai is (Pinyin writing of) Chinese 
 
 A brief dive into `xiaobai-marker`'s GitHub profile (by now mysteriously removed) confirms this initial impression.
 
-![`xiaobai-marker`'s GitHub profile, listing three cloned repositories](profile.png "GitHub profile of `xiaobai-marker`")
+![`xiaobai-marker`'s GitHub profile, listing three cloned repositories](profile.png#eager "GitHub profile of `xiaobai-marker`")
 
 They forked only three publicly available repositories. They apparently deal with self-driving toy cars and machine learning to detect road lanes. Fun! However, that's not a lot of content for someone who seems to contribute to other projects, especially considering that they did not open any repositories themselves.
 
@@ -163,11 +163,11 @@ Ah yes. Privacy conscious. At least we learn that the server runs `nginx` versio
 
 If we look back at the network section of the Triage analysis, we see that the malware made a request to the `/api` path. API stands for Application Programming Interface and is basically a somewhat standardized interface for talking to computers programmatically. What does that API path look like in the browser?
 
-![The "/api" path of the command-and-control server replies with "fail"](api.png "API path")
+![The "/api" path of the command-and-control server replies with "fail"](api.png#noresize "API path")
 
 I guess I'm not invited to that party. Let's explore the website a bit more and guess some other paths.
 
-![The "/login" path of the command-and-control server, returning a 404 page](login.png "`404` page")
+![The "/login" path of the command-and-control server, returning a 404 page](login.png#noresize "`404` page")
 
 Nope. Not that easy, apparently. `404` is browser-speak for "I can't find what you asked of me". Let's see what Google knows about this URL.
 

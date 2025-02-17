@@ -16,7 +16,7 @@ hidePagination = true
 fediverse = "@ole@fosstodon.org"
 +++
 
-![A map of Underground lines in Stockholm](header.jpg "If your `git` graph looks like this, you have seriously screwed up")
+![A map of Underground lines in Stockholm](header.jpg#eager "If your `git` graph looks like this, you have seriously screwed up")
 
 > "I've got no time for prose, give me a solution!" [Sure, click here to get to the juicy bits.](#solutions) For the readers with patience, the story starts below.
 
@@ -32,7 +32,7 @@ To set the ground for explaining fast-forward merging, I'll cherry-pick (chuckle
 
 Let's follow best practices where we have our `main` branch protected, meaning that we cannot add changes to it directly. Any changes that should end up in `main` will be merged via pull- (GitHub speak) or merge- (same, but GitLab speak) requests. That way there can be some auditing before code ends up in the `main` branch. This could prevent minor hiccups like the [CrowdStrike-related IT outages](https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages).
 
-![X post from nixCraft, reading: "Guys, I started working at the cybersecurity firm Crowdstrike. Today is my first day. Eight hours ago, I pushed some major code to production. I am so proud of myself. I am going home now. I feel something really good is coming my way tomorrow morning at work"](nixCraft_crowdstrike.png#full "nixCraft having a blast at Crowdstrike")
+![X post from nixCraft, reading: "Guys, I started working at the cybersecurity firm Crowdstrike. Today is my first day. Eight hours ago, I pushed some major code to production. I am so proud of myself. I am going home now. I feel something really good is coming my way tomorrow morning at work"](nixCraft_crowdstrike.png#full#eager "nixCraft having a blast at Crowdstrike")
 
 Granted, I don't think code pushed to `main` was the cause for the global-scale IT outage, but it would have been funny if it was -- however funny [~$10 billion in damages](https://www.businessinsider.com/businesses-claiming-losses-crowdstrike-outage-insurance-billions-losses-cyber-policies-2024-7) can be.
 
@@ -186,7 +186,7 @@ While rather low-tech, this relies on the workflow and discipline of the develop
 
 The mouse cursor hovers over the fat, green "Merge pull request" button.
 
-![Mouse cursor hovering menacingly over GitHubs "Merge pull request" button](MERGE.png "Don't. Don't do it.")
+![Mouse cursor hovering menacingly over GitHubs "Merge pull request" button](MERGE.png#noresize "Don't. Don't do it.")
 
 **Stop! Resist the temptation!**
 
