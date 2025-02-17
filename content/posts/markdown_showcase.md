@@ -28,6 +28,41 @@ This is mainly a reference for my future self. Feel free to browse and maybe
 learn a thing or two. Keep in mind: not everything listed here will work for
 your theme, and there might be features that yours have that are not covered here.
 
+## Math
+
+```
+\[
+\begin{aligned}
+KL(\hat{y} || y) &= \sum_{c=1}^{M}\hat{y}_c
+\log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) +
+KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+\]
+```
+
+\[
+\begin{aligned}
+KL(\hat{y} || y) &= \sum_{c=1}^{M}\hat{y}_c
+\log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) +
+KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+\]
+
+## Manicules
+```
+{{</* manicule right */>}} Attention! {{</* manicule left */>}}
+
+The header up here {{</* manicule up */>}} is larger
+than the footnote down there {{</* manicule down */>}}.
+```
+
+{{< manicule right >}} Attention! {{< manicule left >}}
+
+The header up here {{< manicule up >}} is larger
+than the footnote down there {{< manicule down >}}.
+
 ## Notice Boxes
 
 From [github.com/martignoni/hugo-notice](https://github.com/martignoni/hugo-notice)
@@ -293,7 +328,7 @@ _This is italic text_
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] [links]() and **formatting** are supported
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
@@ -302,7 +337,7 @@ _This is italic text_
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] [links]() and **formatting** are supported
 - [x] list syntax required (any unordered or ordered list supported)
 - [ ] this is a complete item
 - [ ] this is an incomplete item
