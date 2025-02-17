@@ -14,5 +14,3 @@ pids
 
 # Nix
 .direnv/
-
-local_dev_assets
