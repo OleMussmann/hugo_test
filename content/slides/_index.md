@@ -7,8 +7,8 @@ draft = false
 
 toc = false
 autonumber = false
-readTime = true
-math = true
+readTime = false
+math = false
 showTags = false
 hideBackToTop = false
 hidePagination = true
