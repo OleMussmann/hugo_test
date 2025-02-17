@@ -89,7 +89,7 @@ unsafe = false
 xhtml = false
 
 [markup.highlight]
-style = 'nord'
+noclasses = false
 
 [params]
 # Meta description
